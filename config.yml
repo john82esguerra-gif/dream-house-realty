@@ -1,0 +1,50 @@
+collections:
+  posts:
+    label: Posts
+    format: md
+    folder: content/posts
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    create: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+
+  properties:
+    label: Properties
+    format: md
+    folder: content/properties
+    slug: '{{slug}}'
+    create: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'text' }
+      - { label: 'Price', name: 'price', widget: 'number' }
+      - { label: 'Images', name: 'images', widget: 'list', field: { label: 'Image', name: 'image', widget: 'image' }}
+
+  team_members:
+    label: Team Members
+    format: md
+    folder: content/team-members
+    slug: '{{slug}}'
+    create: true
+    fields:
+      - { label: 'Name', name: 'name', widget: 'string' }
+      - { label: 'Position', name: 'position', widget: 'string' }
+      - { label: 'Image', name: 'image', widget: 'image' }
+
+  testimonials:
+    label: Testimonials
+    format: md
+    folder: content/testimonials
+    slug: '{{slug}}'
+    create: true
+    fields:
+      - { label: 'Name', name: 'name', widget: 'string' }
+      - { label: 'Testimonial', name: 'testimonial', widget: 'text' }
+
+settings:
+  label: Settings
+  files:
+    - { label: 'Site Settings', name: 'site', file: 'content/settings/site.yml' }
+    - { label: 'SEO Settings', name: 'seo', file: 'content/settings/seo.yml' }
