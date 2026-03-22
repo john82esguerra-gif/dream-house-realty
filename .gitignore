@@ -1,0 +1,38 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+egg-info/
+instance/
+__.egg-info/
+lib/
+lib64/
+share/
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# pytest
+.cache
+
+# mypy
+.mypy_cache/
+
+# virtualenv
+.env
+.venv
+
+# Environment variables
+.env
+.local
